@@ -1,0 +1,205 @@
+/*********
+ *GENERAL 
+ *********/
+
+.no-padding {
+    padding: 0;
+}
+
+html,
+body {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+/*********
+ *CONTENT 
+ *********/
+
+.section {
+    height: 100vh;
+    padding: 2%;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.section img {
+    margin-top: 20%;
+    height: 70%;
+    width: 100%;
+}
+
+.container {
+    min-width: 100%;
+    min-height: 100%;
+    padding: 0;
+}
+
+.col-12 card {
+    width: 50%;
+}
+
+.row {
+    padding: 2%;
+}
+
+.col-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.jumbotron {
+    margin-top: 20%;
+    height: 70%;
+    border-radius: 0;
+    width: 100%;
+}
+
+
+/*********
+ *NAVBAR 
+ *********/
+
+.navbar-brand img {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    height: 50%;
+}
+
+.navbar-brand {
+    width: 10%;
+    height: 10%;
+    vertical-align: middle;
+}
+
+li.nav-item {
+    vertical-align: center;
+}
+
+.nav a {
+    color: #37474f;
+}
+
+.fa-caret-up {
+    margin-left: 8%;
+    width: 10%;
+}
+
+.nav {
+    padding: 1.5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: #cfd8dc;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-item {
+    margin-top: 1.3%;
+    font-size: 1.5em;
+}
+
+
+/*********
+ *SCROLLING MENU
+ *********/
+
+#scrolling-menu {
+    position: fixed;
+    z-index: 1;
+    height: 25%;
+    width: 10vh;
+    margin-top: 22%;
+    margin-left: 98%;
+}
+
+#scrolling-menu label {
+    margin-bottom: 30%;
+}
+
+
+/*********
+ *RADIOBUTTON 
+ *********/
+
+
+/* Customize the label (the container) */
+
+.radiobutton {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default radio button */
+
+.radiobutton input {
+    position: absolute;
+    opacity: 0;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.radiobutton:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.radiobutton input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.radiobutton input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.radiobutton .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
